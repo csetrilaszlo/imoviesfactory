@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>iMovies - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   <header>
+       <div class="top">
+            <img src='./img/imovieslogo.png' alt="logo" class="logo">
+            <button class='top-button'>Sign In</button>
+       </div>
+            
+        <div class="content">
+            <h1 id='last-h1'>Unlimited movies, TV shows, and more.</h1>
+            
+            <p id='watch'>Watch anywhere. Cancel anytime.</p>
+            <p id='paragraph'>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class='content-buttons' >
+               <input type = 'text' class='input-text' placeholder="Email adress" />
+               <button class="buttons">Get Started <img  class='next' src='./img/next.png' /></button>     
+            </div>
+        </div>
+   </header>
+
+
+   <section class='first-section'>
+       <div class="section-text">
+            <p class='title'>Enjoy on your TV.</p>
+            <p class="text">Watch on Smart TVs, Playstation, Xbox,Chromecast, Apple TV, Blu-ray players, and more.</p> 
+            
+       </div>
+       
+        <div class="animation-container">
+            
+                <img src='./img/firsttv.png' class='story-card'/>
+                
+                <video src='./img/video1.m4v' class='video1' autoplay muted loop>  
+                </video>
+        </div>    
+    </section>
+
+    <section class='first-section' id='reverse'>
+        <div class="animation-container">
+                 <img src='./img/phone.jpg' class='story-card'/>
+        </div>
+
+        <div class="section-text">
+             <p class='title'>Download your shows to watch offline.</p>
+             <p class="text">Save your favorites easily and always have something to watch.</p> 
+             
+        </div>
+        
+         
+     </section>
+
+
+     <section class='first-section'>
+        <div class="section-text">
+             <p class='title'>Watch everywhere.</p>
+             <p class="text">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p> 
+             
+        </div>
+        
+         <div class="animation-container">
+             
+                 <img src='./img/mac.png' class='story-card'/>
+                
+                 <video src='./img/video2.m4v' class='video1' id='mac' autoplay muted loop>  
+                 </video>
+                 
+         </div>    
+     </section>
+
+     <section class='first-section' id="reverse">
+         <div class="animation-container">    
+                 <img src='./img/kids.png' class='story-card'/> 
+         </div>  
+
+        <div class="section-text">
+             <p class='title'>Create profiles for kids.</p>
+             <p class="text">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+            </p> 
+             
+        </div>
+        
+           
+     </section>
+     
+        
+     
+     
+        
+     <section class="list">
+         <p class="frequently">Frequently Asked Questions</p> 
+         <ul class="questions-menu">
+             <li class="item" id="item1">
+                <a class='list-title' href='#item1' onclick="changeImageFirst()">
+                    What is iMovies?
+                    <img src="./img/plus.svg"  class="plus" id="plus"/>
+                    <img src='./img/cancel.svg' class="plus" id='cancel'/> 
+                </a> 
+                <p class="item-text" id='itemOne'>
+                    iMovies is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                    <br>
+                    <br>
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                </p>
+
+            </li>
+
+
+             <li class="item" id="item1">
+                <a class='list-title' href='#item1' onclick="changeImageSecond()">
+                    How much does iMovies cost?
+                    <img src="./img/plus.svg"  class="plus" id='plus2'/>
+                    <img src='./img/cancel.svg' class="plus" id='cancel2'/> 
+                </a> 
+                <p class="item-text" id='itemTwo'>
+                    Watch iMovies on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from EUR7.99 to EUR11.99 a month. No extra costs, no contracts.
+                    
+                </p>
+
+             </li>
+
+
+             <li class="item" id="item1">
+                <a class='list-title' href='#item1' onclick="changeImageThird()">
+                    Where can I watch?
+                    <img src="./img/plus.svg"  class="plus" id="plus3"/>
+                    <img src='./img/cancel.svg' class="plus" id='cancel3'/> 
+                </a> 
+                <p class="item-text" id='itemThree'>
+                    Watch anywhere, anytime, on an unlimited number of devices. Sign in with your iMovies account to watch instantly on the web at iMovies.com from your personal computer or on any internet-connected device that offers the iMovies app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                    <br>
+                    You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take iMovies with you anywhere.
+                    
+                </p>
+
+             </li>
+
+
+             <li class="item" id="item1">
+                <a class='list-title' href='#item1' onclick="changeImageFourth()">
+                    How do I cancel?
+                    <img src="./img/plus.svg"  class="plus" id="plus4"/>
+                    <img src='./img/cancel.svg' class="plus" id='cancel4'/> 
+                </a> 
+                <p class="item-text" id='itemFour'>
+                    iMovies is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                    
+                </p>
+
+             </li>
+
+             <li class="item" id="item1">
+                <a class='list-title' href='#item1' onclick="changeImageFifth()">
+                    What can I watch on iMovies?
+                    <img src="./img/plus.svg"  class="plus" id="plus5"/>
+                    <img src='./img/cancel.svg' class="plus" id='cancel5'/> 
+                </a> 
+                <p class="item-text" id='itemFive'>
+                    iMovies has an extensive library of feature films, documentaries, TV shows, anime, award-winning iMovies originals, and more. Watch as much as you want, anytime you want.
+                    
+                </p>
+
+             </li>
+
+
+             <li class="item" id="item1">
+                <a class='list-title' href='#item1' onclick="changeImageSixth()">
+                    Is iMovies good for kids?
+                    <img src="./img/plus.svg"  class="plus" id="plus6"/>
+                    <img src='./img/cancel.svg' class="plus" id='cancel6'/> 
+                </a> 
+                <p class="item-text" id='itemSix'>
+                    The iMovies Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+                    <br>
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+
+                    
+                </p>
+
+             </li>
+
+             
+
+
+            </ul>
+
+     </section>
+
+
+     <div class="content">
+        
+        <p id='paragraph'>Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class='content-buttons' >
+           <input type = 'text' class='input-text' placeholder="Email adress" />
+           <button class="buttons">Get Started <img  class='next' src='./img/next.png' /></button>     
+        </div>
+    </div>
+    <div class="last-line"></div>
+
+    <footer>
+        <div class="footer-div">
+          <p>Questions? Call <span id="numbers">0900 122-120</span></p>  
+            <div class="links">
+                
+                    <div>
+                        <li>FAQ</li>
+                        <li>Investor Relations</li>
+                        <li>Privacy</li>
+                        <li>Speed Test</li>
+                    </div>
+                    <div>
+                        <li>Help Center</li>
+                        <li>Jobs</li>
+                        <li>Cookie Preferences</li>
+                        <li>Legal Notices</li>
+                    </div>
+                    <div>
+                        <li>Account</li>
+                        <li>Ways to Watch</li>
+                        <li>Corporate Information</li>
+                        <li>iMovies Originals</li>
+                    </div>
+                    <div>
+                        <li>Media Center</li>
+                        <li>Terms of Use</li>
+                        <li>Contact Us</li>
+                       
+                    </div>
+
+                
+            </div>
+            
+        </div>
+        
+      
+    </footer>
+<div class="marginBottom">
+    <p>iMovies </p>
+</div>  
+
+
+   <script src="index.js"></script>
+</body>
+</html>
